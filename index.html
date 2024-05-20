@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Prodotti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="addbutton" id="addProductBtn">Aggiungi Prodotto</button>
+        
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 align="center">Nuovo Prodotto</h2>
+                <form id="productForm">
+                    <label for="title">Titolo:</label>
+                    <input type="text" id="title" name="title" required placeholder="Nome prodotto"> <br>
+                    
+                    <label for="price">Prezzo:</label>
+                    <input type="number" id="price" name="price" step="0.01" required placeholder="Prezzo prodotto"> <br>
+                    
+                    <label for="category">Categoria:</label>
+                    <select id="category" name="category" required> <br>
+                        <option value="Elettronica">Elettronica</option>
+                        <option value="Abbigliamento">Abbigliamento</option>
+                        <option value="Cibo">Cibo</option>
+                        <!-- Aggiungere altre categorie qui -->
+                    </select>
+                    
+                    <button type="submit">Salva</button>
+                </form>
+            </div>
+        </div>
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Titolo</th>
+                    <th>Prezzo</th>
+                    <th>Categoria</th>
+                    <th>Azione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Prodotti saranno caricati qui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
