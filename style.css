@@ -13,6 +13,34 @@ button {
     margin: 20px 0;
 }
 
+.submitbtn{
+    background-color: #000155;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transizione per l'hover */
+}
+
+.submitbtn:hover{
+    background-color: #0000aa; 
+}
+
+.deleteBtn{
+    background-color: #b10000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transizione per l'hover */
+}
+
+.deleteBtn:hover{
+    background-color: #580000;
+}
+
 .addbutton{
     background-color: #ffffff;
     color: #000000;
