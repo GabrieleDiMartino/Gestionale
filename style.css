@@ -42,8 +42,8 @@ button {
 }
 
 .addbutton{
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #7a00df;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -52,7 +52,7 @@ button {
 }
 
 .addbutton:hover{
-    background-color: #c70000;
+    background-color: #4a0086;
     color: #ffffff;
     border: 1px solid #000000;
 }
