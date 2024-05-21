@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Funzione per caricare i prodotti dal database
     function loadProducts() {
         fetch('server.php')
-            .then(response => response.json()) // Parsea la risposta JSON
+            .then(response => response.json()) 
             .then(products => {
                 const tbody = document.getElementById('productTable').getElementsByTagName('tbody')[0]; // Seleziona il corpo della tabella
                 tbody.innerHTML = ''; // Svuota il corpo della tabella
